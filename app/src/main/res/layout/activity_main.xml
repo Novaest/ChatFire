@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:background="@color/TESTE"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_edit_text_rounded"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/email"
+        android:inputType="textWebEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/senhaEditText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:background="@drawable/bg_edit_text_rounded"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/senha"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/emailEditText"
+        app:layout_constraintStart_toStartOf="@+id/emailEditText"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditText" />
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_bttn_rounded"
+        android:text="@string/entrar"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/senhaEditText"
+        app:layout_constraintStart_toStartOf="@+id/senhaEditText"
+        app:layout_constraintTop_toBottomOf="@+id/senhaEditText" />
+
+    <TextView
+        android:id="@+id/contaNovaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/contaNova"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnEntrar"
+        app:layout_constraintStart_toStartOf="@+id/btnEntrar"
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
